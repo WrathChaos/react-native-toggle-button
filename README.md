@@ -10,7 +10,7 @@
 
 <p align="center">
   <img alt="React Native Toggle Button"
-        src="assets/Screenshots/typescript.jpg" />
+        src="assets/Screenshots/react-native-toggle-button.gif" />
 </p>
 
 # Installation
