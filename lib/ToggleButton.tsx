@@ -22,8 +22,10 @@ interface IToggleButtonProps {
   activeTextStyle?: CustomTextStyleProp;
   inactiveButtonStyle?: CustomStyleProp;
   inactiveTextStyle?: CustomTextStyleProp;
-  backgroundColor?: string;
   TouchableComponent?: any;
+  primaryText: string;
+  secondaryText: string;
+  initial?: boolean;
   onPress: (isToggled: boolean) => void;
 }
 
@@ -33,10 +35,13 @@ const ToggleButton: React.FC<IToggleButtonProps> = ({
   activeTextStyle,
   inactiveButtonStyle,
   inactiveTextStyle,
+  primaryText,
+  secondaryText,
+  initial = true,
   TouchableComponent = TouchableWithoutFeedback,
   onPress,
 }) => {
-  const [isToggled, setToggled] = useStateWithCallback<boolean>(false);
+  const [isToggled, setToggled] = useStateWithCallback<boolean>(initial);
 
   const handlePress = () => {
     setToggled(!isToggled, (newValue: boolean) => {
@@ -63,10 +68,10 @@ const ToggleButton: React.FC<IToggleButtonProps> = ({
       <TouchableComponent style={{}} onPress={handlePress}>
         <View style={styles.containerGlue}>
           <View style={onToggleButtonStyle}>
-            <Text style={onToggleTextStyle}>On</Text>
+            <Text style={onToggleTextStyle}>{primaryText}</Text>
           </View>
           <View style={offToggleButtonStyle}>
-            <Text style={offToggleTextStyle}>Off</Text>
+            <Text style={offToggleTextStyle}>{secondaryText}</Text>
           </View>
         </View>
       </TouchableComponent>

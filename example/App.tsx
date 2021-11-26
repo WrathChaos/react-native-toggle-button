@@ -14,8 +14,10 @@ const App = () => {
       }}
     >
       <ToggleButton
-        onPress={(value: boolean) => {
-          console.log(value);
+        primaryText="On"
+        secondaryText="Off"
+        onPress={(isToggled: boolean) => {
+          console.log(isToggled);
         }}
       />
     </SafeAreaView>
