@@ -1,6 +1,6 @@
 <img alt="React Native Toggle Button" src="assets/logo.png" width="1050"/>
 
-[![React Native Toggle Button](https://img.shields.io/badge/-Extremely%20easy%20to%20create%20a%20React%20Native%20Component%20Library%20with%20both%20Stateful%20and%20Functional%20Component%20Examples-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-toggle-button)
+[![React Native Toggle Button](https://img.shields.io/badge/-Cool%20and%20easy%20to%20use%20react%20native%20toggle%20button-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-toggle-button)
 
 [![npm version](https://img.shields.io/npm/v/react-native-toggle-button.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-toggle-button)
 [![npm](https://img.shields.io/npm/dt/react-native-toggle-button.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-toggle-button)
