@@ -13,7 +13,11 @@ const App = () => {
         backgroundColor: "#161918",
       }}
     >
-      <ToggleButton onPress={() => {}} />
+      <ToggleButton
+        onPress={(value: boolean) => {
+          console.log(value);
+        }}
+      />
     </SafeAreaView>
   );
 };
