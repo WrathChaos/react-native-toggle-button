@@ -1,7 +1,6 @@
 import React from "react";
 import { SafeAreaView } from "react-native";
-
-import ToggleButton from "./lib/ToggleButton";
+import ToggleButton from "react-native-toggle-button";
 
 const App = () => {
   return (
